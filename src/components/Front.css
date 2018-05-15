@@ -1,10 +1,36 @@
 body {
-    background-image: url("../img/blackwp.jpg");
-    overflow: hidden;
+    overflow-x: hidden;
+    background-image: url("../img/corridor1.png");
+    background-repeat: no-repeat;
 }
 
 :root {
+    --cursorX: 50vw;
+    --cursorY: 50vh;
     --animation-time: 5s;
+}
+
+:root:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none;
+    background: radial-gradient( circle 15vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.99) 100%)
+}
+
+#media-monster {
+    height: 50vw;
+}
+
+.block1 {
+    color: white;
+    padding-bottom: 10px;
+}
+
+.mouse-coord {
+    overflow-x: hidden;
 }
 
 .front-layer {
@@ -12,21 +38,14 @@ body {
     min-width: 110vw;
 }
 
-.lights-layer {
+.monster-layer {
+    pointer-events: all;
     position: absolute;
-    height: auto;
-    top: 25vw;
-    right: 27.5vw;
-    max-width: 100%;
-    height: auto;
-    -webkit-animation: flicker var(--animation-time) linear alternate infinite;
-    animation: flicker var(--animation-time) linear alternate infinite;
+    left: 60%;
+    top: 75%;
 }
 
-.monster-layer {
-    position: absolute;
-    left: 70vw;
-    top: 38vw;
+.monster-layer:hover {
     -webkit-animation: vanish 10s ease-in-out infinite;
     animation: vanish 10s ease-in-out infinite;
 }
@@ -54,24 +73,24 @@ body {
 }
 
 @keyframes vanish {
-    0%, 20%, 63%, 63.999%, 65%, 69.999%, 100% {
+    0% {
         opacity: 0;
         text-shadow: none;
     }
-    19.999%, 62.999%, 64%, 64.999%, 70%, 71.999% {
-        opacity: .99;
-        text-shadow: -1px #000;
+    100% {
+        opacity: 0;
+        text-shadow: none;
     }
 }
 
 @-webkit-keyframes vanish {
-    0%, 20%, 63%, 63.999%, 65%, 69.999%, 100% {
+    0% {
         opacity: 0;
         text-shadow: none;
     }
-    19.999%, 62.999%, 64%, 64.999%, 70%, 71.999% {
-        opacity: .99;
-        text-shadow: -1px #000;
+    100% {
+        opacity: 0;
+        text-shadow: none;
     }
 }
 
