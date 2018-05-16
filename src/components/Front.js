@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Parallax from 'parallax-js';
 import Monster from '../img/eyes.png';
 import { Row, Col } from 'react-materialize';
-
-import './Front.css';
+import '../css/Front.css';
 
 class Front extends Component {
     constructor(props) {
@@ -44,24 +43,6 @@ class Front extends Component {
                             <h1>Spooky</h1>
                             <h3>List of Spooky Games</h3>
                             <p style={{ color: 'black' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam lobortis faucibus dui eget ornare. In hac habitasse platea dictumst. Curabitur ultrices vulputate leo ut convallis. Suspendisse porttitor lacus nec libero aliquet, vitae interdum nibh scelerisque. Donec convallis orci eu bibendum scelerisque. Duis non diam eros. Morbi vel lectus elementum, tincidunt nulla ultrices, pulvinar est. Nullam volutpat ex id venenatis semper. Aliquam tempus, urna eu consectetur ultricies, diam nisi iaculis nisi, eu pharetra dui tortor sed tellus. Nullam dictum dolor a lacus semper, eu rhoncus sem consectetur. Curabitur a tortor lorem. Mauris dignissim in tellus vitae aliquet. Cras ipsum augue, porta ullamcorper euismod nec, suscipit eu dui. Phasellus sagittis faucibus velit eget feugiat. Etiam aliquam elit erat, vitae placerat massa eleifend in. Donec sed tempus enim.</p>
-                        </Col>
-                    </Row>
-                    <Col>
-                        <p>hello world</p>
-                    </Col>
-                    <Row>
-                        <Col>
-                            <p>hello world</p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <p>hello world</p>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <p>hello world</p>
                         </Col>
                     </Row>
                 </div>
