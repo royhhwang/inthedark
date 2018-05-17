@@ -49,13 +49,13 @@ class Flashlight extends Component {
                         <div data-depth="0.2" id="media-monster">
                             <img src={Eyes} alt="spooky monster" className={visibleMonster + ' monster-layer'}></img>
                         </div>
-                        <div data-depth="0.4">
+                        {/* <div data-depth="0.4">
                             <img src={Eyes} alt="smoke ring" className="smoke-layer"></img>
-                        </div>
+                        </div> */}
                     </div>
                 </Col>
                 <Col className="s12 light-switch">
-                    <h1 className="block1">Spooky</h1>
+                    <h1 className="block1">In the Dark</h1>
                     <img src={Lightswitch} className={flipSwitch} onClick={this.handleClick} alt="lightswitch"></img>
                 </Col>
             </Row>

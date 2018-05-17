@@ -18,8 +18,8 @@ class Front extends Component {
     onMouseMove = (e) => {
         this.setState({ x: e.screenX, y: e.screenY });
 
-        const x = e.screenX || e.touches[0].screenX;
-        const y = e.screenY || e.touches[0].screenY;
+        const x = e.screenX;
+        const y = e.screenY;
 
         document.documentElement.style.setProperty('--cursorX', x + 'px');
         document.documentElement.style.setProperty('--cursorY', y + 'px');
