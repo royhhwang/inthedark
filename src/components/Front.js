@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Row, Col } from 'react-materialize';
 import Flashlight from './Flashlight';
 import Feed from './Feed';
+import EyeTrack from './EyeTrack';
 import '../css/Front.css';
 
 class Front extends Component {
@@ -31,6 +32,7 @@ class Front extends Component {
                 <div className="mouse-coord" onMouseMove={this.onMouseMove.bind(this)} >
                     <Row>
                         <Col className="s12 feed-block">
+                            <EyeTrack />
                             <Flashlight />
                             <Feed />
                         </Col>

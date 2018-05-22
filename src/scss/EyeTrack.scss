@@ -1,0 +1,63 @@
+:root {
+    --imgAngle: 90deg;
+    --imgTranslate: 0px;
+}
+
+.eye-layer {
+    height: 50em;
+    background-image: url("../img/blackwp.jpg");
+    background-repeat: no-repeat;
+}
+
+#eye-shell {
+    pointer-events: all;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 20em;
+    bottom: 0;
+    display: block;
+}
+
+#eye-move {
+    -webkit-transform: rotate(var(--imgAngle)) translateY(var(--imgTranslate));
+    transform: rotate(var(--imgAngle)) translateY(var(--imgTranslate));
+    pointer-events: all;
+    height: 90px;
+    width: auto;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    top: 9.7em;
+}
+
+// #invisibility:hover {
+//     -webkit-animation: vanish 2s ease-in-out infinite;
+//     animation: vanish 2s ease-in-out infinite;
+// }
+
+@keyframes vanish {
+    0% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    100% {
+        opacity: 0;
+        text-shadow: none;
+    }
+}
+
+@-webkit-keyframes vanish {
+    0% {
+        opacity: 0;
+        text-shadow: none;
+    }
+
+    100% {
+        opacity: 0;
+        text-shadow: none;
+    }
+}

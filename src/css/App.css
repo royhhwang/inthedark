@@ -1,22 +1,4 @@
 body {
-  overflow-x: hidden;
-  background-image: url("../img/corridor1.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto; }
-
-:root {
-  --cursorX: 50vw;
-  --cursorY: 50vh;
-  --animation-time: 5s;
-  --lights: radial-gradient( circle 15vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.99) 100%) ; }
-
-:root:before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  pointer-events: none;
-  background: var(--lights); }
+  overflow-x: hidden; }
 
 /*# sourceMappingURL=App.css.map */
