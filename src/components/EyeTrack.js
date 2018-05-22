@@ -29,15 +29,13 @@ class EyeTrack extends Component {
         const divWidth = this.divElement.clientWidth;
 
         const imgBox = document.getElementById("eye-move");
-        const imgCenter = [imgBox.offsetLeft + ((divWidth / 2)), imgBox.offsetTop + (divHeight / 2)];
+        const imgCenter = [imgBox.offsetLeft + ((divWidth / 2)), imgBox.offsetTop + (divHeight + 20)];
 
         this.setState({ divHeight });
 
         const angle = Math.atan2(e.screenX - imgCenter[0], - (e.screenY - imgCenter[1])) * (180 / Math.PI);
         const degree = (Math.PI / 180) / (Math.PI / 50);
         const imgShift = ((Math.abs(angle) * (-1)) * degree);
-
-        console.log(angle);
 
         document.documentElement.style.setProperty('--imgAngle', angle + 'deg');
         document.documentElement.style.setProperty('--imgTranslate', imgShift + 'px');
