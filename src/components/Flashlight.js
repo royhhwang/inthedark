@@ -21,7 +21,7 @@ class Flashlight extends Component {
             document.documentElement.style.setProperty('--lights', 0);
         }
         else {
-            document.documentElement.style.setProperty('--lights', 'radial-gradient( circle 15vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.99) 100%)');
+            document.documentElement.style.setProperty('--lights', 'radial-gradient( circle 25vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.99) 100%)');
         }
     }
 

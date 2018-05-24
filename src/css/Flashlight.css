@@ -2,7 +2,7 @@
   --cursorX: 50vw;
   --cursorY: 50vh;
   --animation-time: 5s;
-  --lights: radial-gradient( circle 15vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.99) 100%); }
+  --lights: radial-gradient( circle 25vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.99) 100%); }
 
 :root:before {
   content: '';
@@ -18,7 +18,9 @@
   transform: rotateX(180deg); }
 
 .light-layer {
-  padding-top: 3%; }
+  padding-top: 3%;
+  box-shadow: 0 5px 0 #000 inset;
+  border-top: dashed 10px black; }
 
 .light-switch {
   height: 100px;
