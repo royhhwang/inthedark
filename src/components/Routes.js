@@ -6,7 +6,7 @@ import AFrame from './AFrame';
 const Routes = () => (
     <BrowserRouter>
         <div>
-            <Route exact path="/*" component={Front} />
+            <Route exact path="/" component={Front} />
             <Route exact path="/aframe" component={AFrame} />
         </div>
     </BrowserRouter>
