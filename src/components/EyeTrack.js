@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Parallax from 'parallax-js';
 import OpenEye from '../img/eyelidslant.png';
 import Eyes from '../img/whiteeye2.png';
-// import RealEye from '../img/eye.png';
 import Hallway from '../img/hallway.jpg';
 import '../css/EyeTrack.css';
 
@@ -38,7 +37,7 @@ class EyeTrack extends Component {
         const degree = (Math.PI / 180) / (Math.PI / 50);
         const imgShift = ((Math.abs(angle) * (-1)) * degree);
         const imgGrow = [e.screenX - imgCenter[0], e.screenY - imgCenter[1]];
-        const imgScale = (Math.sqrt(Math.pow(imgGrow[0], 2) + Math.pow(imgGrow[1], 2))) / 100;
+        const imgScale = (Math.sqrt(Math.pow(imgGrow[0], 2) + Math.pow(imgGrow[1], 2))) / 50;
         const inverseScale = (1 / imgScale) + 0.4;
         document.documentElement.style.setProperty('--imgAngle', angle + 'deg');
         document.documentElement.style.setProperty('--imgTranslate', imgShift + 'px');
