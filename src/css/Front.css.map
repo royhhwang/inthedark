@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,WAAY;EACR,UAAU,EAAC,MAAM;;AAGrB,YAAa;EACT,UAAU,EAAE,MAAM",
+"mappings": "AAAA,WAAY;EACR,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,OAAO;;AAGnB,YAAa;EACT,UAAU,EAAE,MAAM",
 "sources": ["../scss/Front.scss"],
 "names": [],
 "file": "Front.css"
