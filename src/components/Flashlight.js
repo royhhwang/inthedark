@@ -8,7 +8,7 @@ class Flashlight extends Component {
         super(props);
 
         this.state = {
-            lights: false,
+            lights: true,
         };
         this.handleClick = this.handleClick.bind(this);
     }

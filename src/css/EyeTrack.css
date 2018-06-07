@@ -6,10 +6,18 @@
 
 .monster-layer {
   position: relative;
-  height: 50em;
-  outline: 5px solid black;
-  overflow: hidden;
-  background-image: url("../img/blackwp.jpg"); }
+  height: 100vh;
+  background-color: black; }
+
+#window-bg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 180px;
+  width: auto;
+  margin-left: -100px;
+  margin-top: 150px;
+  z-index: 2; }
 
 #eye-shell {
   pointer-events: all;

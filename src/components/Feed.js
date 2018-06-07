@@ -5,7 +5,7 @@ import '../css/Feed.css';
 const Feed = () => (
     <div>
         <Row>
-            <Col className="s12">
+            <Col className="s12 hidden-block">
                 <h1 className="block1">In the Dark</h1>
             </Col>
         </Row>
