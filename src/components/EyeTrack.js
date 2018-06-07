@@ -28,7 +28,6 @@ class EyeTrack extends Component {
     render() {
         return (
             <div className="monster-layer" onMouseMove={this.handleEyeTrack.bind(this)}>
-                <p style={{ backgroundColor:'white' }}>hello world</p>
                 <img src={Eyes} alt="human eye" id="flickering" className="flicker-eyes eye1" draggable=" false" ref={(flickerElement) => this.flickerElement = flickerElement} />
             </div>
         );
