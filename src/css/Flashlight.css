@@ -29,4 +29,8 @@
   top: 1%;
   right: 1%; }
 
+@media screen and (max-width: 950px) {
+  .light-switch {
+    height: 50px; } }
+
 /*# sourceMappingURL=Flashlight.css.map */

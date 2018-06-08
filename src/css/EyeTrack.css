@@ -6,13 +6,16 @@
 
 .circle-eyes {
   position: relative;
-  width: 80px; }
+  width: 80px;
+  left: 1%;
+  padding-top: 1%; }
 
 #flicker-eyes {
   height: 80px;
   display: inline-block;
   position: absolute;
-  left: 0%;
+  left: 1%;
+  top: 1%;
   -webkit-transform: rotate(var(--secondAngle));
   transform: rotate(var(--secondAngle)); }
 
@@ -30,5 +33,11 @@
   100% {
     opacity: 0;
     text-shadow: none; } }
+@media screen and (max-width: 950px) {
+  .circle-eyes {
+    width: 40px; }
+
+  #flicker-eyes {
+    height: 40px; } }
 
 /*# sourceMappingURL=EyeTrack.css.map */
