@@ -1,3 +1,33 @@
+@font-face {
+    font-family: LemonMilk;
+    src: url("../fonts/LemonMilk.otf") format("opentype");
+}
+
+@font-face {
+    font-family: LemonMilklight;
+    src: url("../fonts/LemonMilklight.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url("../fonts/BebasNeueBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: BebasNeueLight;
+    src: url("../fonts/BebasNeue Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url("../fonts/Bebas.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Code;
+    src: url("../fonts/CodeBold.otf") format("opentype");
+}
+
 body {
-    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-family: LemonMilk;
 }

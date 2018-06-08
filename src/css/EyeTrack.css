@@ -4,74 +4,17 @@
   --imgScale: 1;
   --secondAngle:90deg; }
 
-.monster-layer {
+.circle-eyes {
   position: relative;
-  height: 100vh;
-  background-color: black; }
+  width: 80px; }
 
-#window-bg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  height: 180px;
-  width: auto;
-  margin-left: -100px;
-  margin-top: 150px;
-  z-index: 2; }
-
-#eye-shell {
-  pointer-events: all;
-  height: 300px;
-  margin: 0 auto;
-  position: relative;
-  left: 53.5em;
-  right: 0;
-  top: 26em;
-  bottom: 0;
-  display: block; }
-
-.flicker-eyes {
+#flicker-eyes {
   height: 80px;
   display: inline-block;
-  position: absolute; }
-
-#flickering {
+  position: absolute;
+  left: 0%;
   -webkit-transform: rotate(var(--secondAngle));
   transform: rotate(var(--secondAngle)); }
-
-.eye1 {
-  left: 27.5em;
-  -webkit-animation: flicker 2s alternate ease-in-out infinite;
-  animation: flicker 2s alternate ease-in-out infinite; }
-
-.eye2 {
-  height: 100px;
-  left: 30.4em !important;
-  -webkit-animation: flicker 3s alternate ease-in-out infinite;
-  animation: flicker 3s alternate ease-in-out infinite; }
-
-.eye3 {
-  top: 3.2em;
-  left: 29.5em !important;
-  height: 50px;
-  -webkit-animation: flicker 5s alternate ease-in-out infinite;
-  animation: flicker 5s alternate ease-in-out infinite; }
-
-#eye-move {
-  -webkit-transform: rotate(var(--imgAngle)) translateY(var(--imgTranslate)) scale(var(--imgScale));
-  transform: rotate(var(--imgAngle)) translateY(var(--imgTranslate)) scale(var(--imgScale));
-  pointer-events: all;
-  height: 150px;
-  width: auto;
-  margin: 0 auto;
-  position: relative;
-  display: block;
-  top: 10em;
-  left: 54em; }
-
-#eye-move:hover {
-  -webkit-animation: vanish 2s ease-in-out infinite;
-  animation: vanish 2s ease-in-out infinite; }
 
 @keyframes vanish {
   0% {
@@ -87,34 +30,5 @@
   100% {
     opacity: 0;
     text-shadow: none; } }
-@keyframes flicker {
-  0%, 19.999%, 22%, 62.999%, 64%, 68.999%, 70%, 100% {
-    opacity: .99;
-    text-shadow: -1px #000; }
-  20%, 21.999%, 63%, 63.999%, 69%, 69.999% {
-    opacity: 0;
-    text-shadow: none; } }
-@-webkit-keyframes flicker {
-  0%, 19.999%, 22%, 62.999%, 64%, 68.999%, 70%, 100% {
-    opacity: .99;
-    text-shadow: -1px #000; }
-  20%, 21.999%, 63%, 63.999%, 69%, 69.999% {
-    opacity: 0;
-    text-shadow: none; } }
-@media screen and (max-width: 950px) {
-  #eye-move {
-    left: 43vw !important; }
-
-  #eye-shell {
-    left: 43vw !important; }
-
-  .eye1 {
-    left: 0em; }
-
-  .eye2 {
-    left: 2.9em !important; }
-
-  .eye3 {
-    left: 2em !important; } }
 
 /*# sourceMappingURL=EyeTrack.css.map */

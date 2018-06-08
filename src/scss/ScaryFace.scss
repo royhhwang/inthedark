@@ -1,0 +1,7 @@
+#track-eyes {
+    height: 80px;
+    display: inline-block;
+    position: absolute;
+    -webkit-transform: rotate(var(--secondAngle));
+    transform: rotate(var(--secondAngle));
+}

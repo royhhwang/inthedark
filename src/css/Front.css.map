@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,IAAK;EACD,UAAU,EAAE,MAAM;EAClB,gBAAgB,EAAE,KAAK",
+"sources": ["../scss/Front.scss"],
 "names": [],
 "file": "Front.css"
 }

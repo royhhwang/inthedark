@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-materialize';
 import Lightswitch from '../img/lightswitch.png';
+import EyeTrack from './EyeTrack';
 import '../css/Flashlight.css';
 
 class Flashlight extends Component {
@@ -8,7 +9,7 @@ class Flashlight extends Component {
         super(props);
 
         this.state = {
-            lights: true,
+            lights: false,
         };
         this.handleClick = this.handleClick.bind(this);
     }
@@ -32,6 +33,7 @@ class Flashlight extends Component {
         return (
             <Row>
                 <Col className="s12 light-layer">
+                    <EyeTrack />
                     <img src={Lightswitch} className={flipSwitch + ' light-switch'} draggable="false" onClick={this.handleClick} alt="lightswitch"></img>
                 </Col>
             </Row>

@@ -1,10 +1,8 @@
 :root {
     --cursorX: 50vw;
     --cursorY: 50vh;
-    cursor: none;
-    overflow: hidden;
     --animation-time: 5s;
-    --lights: radial-gradient( circle 100vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.99) 100%);
+    --lights: radial-gradient( circle 25vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.99) 100%);
 }
 
 :root:before {
@@ -23,14 +21,15 @@
 }
 
 .light-layer {
-    padding-top: 3%;
-    box-shadow: 0 5px 0 #000 inset;
-    border-top: dashed 10px black;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
 }
 
 .light-switch {
+    position: fixed;
     height: 100px;
     width: auto;
+    top: 1%;
+    right: 1%;
 }
-
-@media screen and (max-width: 1102px) {}

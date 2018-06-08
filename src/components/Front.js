@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Row, Col } from 'react-materialize';
-// import Flashlight from './Flashlight';
-// import Feed from './Feed';
-import EyeTrack from './EyeTrack';
+import Flashlight from './Flashlight';
+import FooterWIP from './FooterWIP';
 import Preloader from './Preloader';
 import '../css/Front.css';
 
@@ -33,10 +32,11 @@ class Front extends Component {
                 <Preloader />
                 <div className="mouse-coord" onMouseMove={this.onMouseMove.bind(this)} >
                     <Row>
-                        <Col className="s12 feed-block">
-                            <EyeTrack />
-                            {/* <Flashlight /> */}
-                            {/* <Feed /> */}
+                        <Col className="s12">
+                            <Flashlight />
+                        </Col>
+                        <Col className="s12">
+                            <FooterWIP />
                         </Col>
                     </Row>
                 </div>
