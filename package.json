@@ -2,7 +2,7 @@
   "name": "in-the-dark",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://royhhwang.github.io/IntheDark/",
+  "homepage": "https://royhhwang.github.io/inthedark/",
   "dependencies": {
     "aframe": "^0.8.2",
     "aframe-particle-system-component": "^1.0.11",
