@@ -1,26 +1,30 @@
 .para-layer {
-    padding-left: 20% !important;
-    padding-right: 20% !important;
+    position: relative;
     padding: 0%;
 }
 
 .spotlight {
+    position: absolute;
     width: 100%;
     height: auto;
-    position: relative;
 }
 
 .hand-layer {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    top: -10em;
+    transform: scale(0.4);
 }
 
 .flicker {
-    -webkit-animation: flicker 5s alternate linear infinite;
-    animation: flicker 5s alternate linear infinite;
+    -webkit-animation: flicker 6s alternate linear infinite;
+    animation: flicker 6s alternate linear infinite;
 }
 
 .flicker2 {
-    -webkit-animation: flicker2 5s alternate linear infinite;
-    animation: flicker2 5s alternate linear infinite;
+    -webkit-animation: flicker2 6s alternate linear infinite;
+    animation: flicker2 6s alternate linear infinite;
 }
 
 @keyframes flicker {
@@ -68,5 +72,11 @@
     20%, 21.999%, 63%, 63.999%, 69%, 69.999% {
         opacity: .99;
         text-shadow: -1px #000;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .hand-layer {
+        top: -4em !important;
     }
 }

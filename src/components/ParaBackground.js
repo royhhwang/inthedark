@@ -17,12 +17,12 @@ class ParaBackground extends Component {
     render() {
         return (
             <ul ref={el => this.scene = el} className="para-layer">
-                <li data-depth="0">
+                <li data-depth="0.1">
                     <img src={Spotlight} className="spotlight flicker" alt="hallway spotlight"></img>
                 </li>
-                {/* <li data-depth="0.5">
-                    <img src={SpookyRoy} className="hand-layer flicker2" alt="spooky"></img>
-                </li> */}
+                <li data-depth="0.2">
+                    <img src={SpookyRoy} className="hand-layer flicker2" alt="spotlight monster" />
+                </li>
             </ul>
         )
     }

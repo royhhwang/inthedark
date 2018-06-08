@@ -10,7 +10,7 @@ h1 {
     text-align: center;
     font-size: 35px;
     padding: 0;
-    padding-bottom: 10% !important;
+    padding-bottom: 10%;
     margin: 0;
 }
 
@@ -86,5 +86,6 @@ h1 {
 @media screen and (max-width: 1150px) {
     .title-block {
         font-size: 15px;
+        padding-bottom: 20% !important;
     }
 }

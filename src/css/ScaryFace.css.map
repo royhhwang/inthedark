@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,WAAY;EACR,MAAM,EAAE,IAAI;EACZ,OAAO,EAAE,YAAY;EACrB,QAAQ,EAAE,QAAQ;EAClB,iBAAiB,EAAE,0BAA0B;EAC7C,SAAS,EAAE,0BAA0B",
-"sources": ["../scss/ScaryFace.scss"],
-"names": [],
-"file": "ScaryFace.css"
-}
