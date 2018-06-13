@@ -1,8 +1,7 @@
 node_modules
 yarn.lock
 .git
+.sass-cache
+.vscode
 /build
-/src/img
-/src/fonts
-/src/media
-/src/models
+/src
