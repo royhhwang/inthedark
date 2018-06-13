@@ -1,5 +1,6 @@
 :root {
     --secondAngle:90deg;
+    --thirdAngle:90deg;
 }
 
 .track-layer {
@@ -16,12 +17,37 @@
     transform: rotate(var(--secondAngle));
 }
 
+.shadow-eyes {
+    display: inline-block;
+    position: fixed;
+    z-index: 2;
+    -webkit-transform: rotate(var(--thirdAngle));
+    transform: rotate(var(--thirdAngle));
+}
+
+.eye1 {
+    left: 0%;
+    top: 6.8%;
+    height: 40px;
+}
+
+.eye2 {
+    top: 0.2%;
+    left: 2.65%;
+    height: 30px;
+}
+
+.eye3 {
+    top: 1.8%;
+    left: 3.2%;
+    height: 50px;
+}
+
 .blink-layer {
     position: absolute;
     width: 100px;
     height: 100px;
     top: 1%;
-    z-index: 3;
     background-color: black;
 }
 
@@ -31,7 +57,7 @@
 }
 
 .bottom-eyelid {
-    background-color:black;
+    background-color: black;
     -webkit-animation: bottomBlink 7s linear infinite !important;
     animation: bottomBlink 7s linear infinite !important;
 }
@@ -140,17 +166,17 @@
     }
 }
 
-@media screen and (max-width: 950px) {
-    .circle-eyes {
-        width: 40px;
-    }
-
+@media screen and (max-width: 1150px) {
     #flicker-eyes {
-        height: 40px;
+        height: 50px;
     }
 
     .blink-layer {
         width: 50px;
         height: 50px;
+    }
+
+    .shadow-eyes {
+        opacity: 0;
     }
 }

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Cellphone from '../img/cellphone.png';
 import Eyelid from '../img/eyelidhori.png';
-import Ring from '../img/scaryface.png';
+import Face from '../img/scaryface.png';
 import Eye from '../img/bear.png';
+import Laugh from '../img/laugh.png';
 import "../css/Preloader.css";
 
 class Preloader extends Component {
@@ -39,8 +40,9 @@ class Preloader extends Component {
                         <div className={cellFlip} id="cell-screen">
                             <img src={Eyelid} className="ring-glitch" id="ring-screen" alt="spinning eyelid"></img>
                             <img src={Eyelid} className="ring-glitch" id="ring-screen3" alt="spinning eyelid"></img>
-                            <img src={Ring} id="ring-screen2" alt="glitched ring"></img>
-                            <img src={Eye} id="eye-screen" alt="glitched eye"></img>
+                            <img src={Face} id="face-screen" alt="glitched face"></img>
+                            <img src={Eye} id="eye-screen" alt="glitched bear"></img>
+                            <img src={Laugh} id="laugh-screen" alt="glitched laugh"></img>
                         </div>
                     </div>
                 </div>

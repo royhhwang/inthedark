@@ -6,7 +6,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     pointer-events: none;
     --gap-horizontal:20px;
     --gap-vertical:20px;
@@ -91,7 +91,7 @@
     animation: rotateRing 10s linear infinite !important;
 }
 
-#ring-screen2 {
+#face-screen {
     position: absolute;
     width: 100%;
     left: 0%;
@@ -110,6 +110,16 @@
     background-color: red;
     -webkit-animation: glitchEye 4s reverse linear infinite !important;
     animation: glitchEye 4s reverse linear infinite !important;
+}
+
+#laugh-screen {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    top: 15%;
+    z-index: 4;
+    -webkit-animation: glitchRing 4s reverse ease infinite !important;
+    animation: glitchRing 4s reverse ease infinite !important;
 }
 
 #ring-screen3 {
