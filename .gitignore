@@ -3,5 +3,5 @@ yarn.lock
 .git
 .sass-cache
 .vscode
-/build
-/src
+build
+src
