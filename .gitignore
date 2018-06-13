@@ -2,4 +2,7 @@ node_modules
 yarn.lock
 .git
 /build
-*/*
+/src/img
+/src/fonts
+/src/media
+/src/models
