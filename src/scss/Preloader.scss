@@ -103,10 +103,11 @@
 
 #eye-screen {
     position: absolute;
-    width: 90%;
+    width: 100%;
     left: 0%;
     top: 15%;
     z-index: 3;
+    background-color: red;
     -webkit-animation: glitchEye 4s reverse linear infinite !important;
     animation: glitchEye 4s reverse linear infinite !important;
 }
@@ -429,7 +430,7 @@
     }
 
     21.9% {
-        opacity: 0.6;
+        opacity: 0.8;
         transform: scale(5) translate3d(2em, 2em, 0);
     }
 
@@ -439,12 +440,12 @@
     }
 
     74% {
-        opacity: 0.7;
-        transform: scale(4) translate3d(0, 0, 0);
+        opacity: 1;
+        transform: scale(8) translate3d(0, 0, 0);
     }
 
     96% {
-        opacity: 0.9;
+        opacity: 0.6;
         transform: scale(3) translate3d(3em, 4em, 0);
     }
 }

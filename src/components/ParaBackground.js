@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import Parallax from 'parallax-js';
 import Spotlight from '../img/spotlight.png';
-import SpookyRoy from '../img/spookyme.png';
+import Teddy from '../img/teddybear.png';
+import SpookyNeo from '../img/bear.png';
 import '../css/ParaBackground.css';
 
 class ParaBackground extends Component {
@@ -17,11 +18,12 @@ class ParaBackground extends Component {
     render() {
         return (
             <ul ref={el => this.scene = el} className="para-layer">
-                <li data-depth="0.1">
-                    <img src={Spotlight} className="spotlight flicker" alt="hallway spotlight"></img>
-                </li>
-                <li data-depth="0.2">
-                    <img src={SpookyRoy} className="hand-layer flicker2" alt="spotlight monster" />
+                <li data-depth="0.3">
+                    <div className="para-absolute">
+                        <img src={Spotlight} className="spotlight flicker" alt="hallway spotlight"></img>
+                        <img src={Teddy} className="teddybear flicker" alt="dark teddy bear"></img>
+                        <img src={SpookyNeo} className="spooky-neo flicker2" alt="spooky neo face"></img>
+                    </div>
                 </li>
             </ul>
         )

@@ -1,7 +1,4 @@
 :root {
-    --imgAngle: 90deg;
-    --imgTranslate: 0px;
-    --imgScale: 1;
     --secondAngle:90deg;
 }
 
@@ -10,21 +7,33 @@
     width: auto;
 }
 
-.circle-eyes {
-    position: relative;
-    width: 80px;
-    left: 1%;
-    padding-top: 1%;
-}
-
 #flicker-eyes {
     height: 80px;
     display: inline-block;
     position: absolute;
-    left: 1%;
     top: 1%;
     -webkit-transform: rotate(var(--secondAngle));
     transform: rotate(var(--secondAngle));
+}
+
+.blink-layer {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 1%;
+    z-index: 3;
+    background-color: black;
+}
+
+.top-eyelid {
+    -webkit-animation: blink 7s linear infinite !important;
+    animation: blink 7s linear infinite !important;
+}
+
+.bottom-eyelid {
+    background-color:black;
+    -webkit-animation: bottomBlink 7s linear infinite !important;
+    animation: bottomBlink 7s linear infinite !important;
 }
 
 @keyframes vanish {
@@ -51,6 +60,86 @@
     }
 }
 
+@keyframes blink {
+    0%, 4%, 7%, 25% {
+        opacity: 1;
+        -webkit-transform: translateY(-92px) rotate(-10deg);
+        transform: translateY(-92px) rotate(-10deg);
+    }
+
+    5%, 26% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    6%, 27%, 100% {
+        opacity: 1;
+        -webkit-transform: translateY(-92px) rotate(-10deg);
+        transform: translateY(-92px) rotate(-10deg);
+    }
+}
+
+@-webkit-keyframes blink {
+    0%, 4%, 7%, 25% {
+        opacity: 1;
+        -webkit-transform: translateY(-92px) rotate(-10deg);
+        transform: translateY(-92px) rotate(-10deg);
+    }
+
+    5%, 26% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    6%, 27%, 100% {
+        opacity: 1;
+        -webkit-transform: translateY(-92px) rotate(-10deg);
+        transform: translateY(-92px) rotate(-10deg);
+    }
+}
+
+@keyframes bottomBlink {
+    0%, 4%, 7%, 25% {
+        opacity: 1;
+        -webkit-transform: translateY(71px);
+        transform: translateY(71px);
+    }
+
+    5%, 26% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    6%, 27%, 100% {
+        opacity: 1;
+        -webkit-transform: translateY(71px);
+        transform: translateY(71px);
+    }
+}
+
+@-webkit-keyframes bottomBlink {
+    0%, 4%, 7%, 25% {
+        opacity: 1;
+        -webkit-transform: translateY(71px);
+        transform: translateY(71px);
+    }
+
+    5%, 26% {
+        opacity: 1;
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    6%, 27%, 100% {
+        opacity: 1;
+        -webkit-transform: translateY(71px);
+        transform: translateY(71px);
+    }
+}
+
 @media screen and (max-width: 950px) {
     .circle-eyes {
         width: 40px;
@@ -58,5 +147,10 @@
 
     #flicker-eyes {
         height: 40px;
+    }
+
+    .blink-layer {
+        width: 50px;
+        height: 50px;
     }
 }

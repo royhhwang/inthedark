@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Cellphone from '../img/cellphone.png';
 import Eyelid from '../img/eyelidhori.png';
-import Ring from '../img/ring.png';
-import Eye from '../img/eye.png';
+import Ring from '../img/scaryface.png';
+import Eye from '../img/bear.png';
 import "../css/Preloader.css";
 
 class Preloader extends Component {
