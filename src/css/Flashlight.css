@@ -112,10 +112,18 @@
     transform: translate3d(0px, 0px, 0px); } }
 @media screen and (max-width: 1200px) {
   .light-switch {
-    height: 50px; }
+    height: 40px; }
 
   .light-text {
     bottom: 30%;
+    left: 45%; } }
+@media screen and (orientation: portrait) and (max-width: 450px) {
+  .light-text {
+    bottom: 30%;
+    left: 39%; } }
+@media screen and (orientation: landscape) and (max-width: 700px) {
+  .light-text {
+    bottom: 3%;
     left: 44%; } }
 
 /*# sourceMappingURL=Flashlight.css.map */

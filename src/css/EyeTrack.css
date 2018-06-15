@@ -1,6 +1,5 @@
 :root {
-  --secondAngle:90deg;
-  --thirdAngle:90deg; }
+  --secondAngle:90deg; }
 
 .track-layer {
   height: 100vh;
@@ -120,7 +119,7 @@
     transform: translateY(71px); } }
 @media screen and (max-width: 1150px) {
   #flicker-eyes {
-    height: 50px; }
+    height: 40px; }
 
   .blink-layer {
     width: 50px;

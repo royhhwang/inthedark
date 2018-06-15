@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Cellphone from '../img/cellphone.png';
-import Eyelid from '../img/eyelidhori.png';
+import Eyelid from '../img/eye.png';
 import Face from '../img/scaryface.png';
 import Eye from '../img/bear.png';
-import Laugh from '../img/laugh.png';
+import Doodle from '../img/doodle.png';
 import "../css/Preloader.css";
 
 class Preloader extends Component {
@@ -42,7 +42,7 @@ class Preloader extends Component {
                             <img src={Eyelid} className="ring-glitch" id="ring-screen3" alt="spinning eyelid"></img>
                             <img src={Face} id="face-screen" alt="glitched face"></img>
                             <img src={Eye} id="eye-screen" alt="glitched bear"></img>
-                            <img src={Laugh} id="laugh-screen" alt="glitched laugh"></img>
+                            <img src={Doodle} id="laugh-screen" alt="glitched laugh"></img>
                         </div>
                     </div>
                 </div>

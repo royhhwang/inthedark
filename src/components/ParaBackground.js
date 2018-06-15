@@ -17,15 +17,18 @@ class ParaBackground extends Component {
 
     render() {
         return (
-            <ul ref={el => this.scene = el} className="para-layer">
-                <li data-depth="0.3">
-                    <div className="para-absolute">
+            <div className="para-absolute">
+                <ul ref={el => this.scene = el} className="para-layer">
+                    <li data-depth="0.1">
                         <img src={Spotlight} className="spotlight flicker" alt="hallway spotlight"></img>
-                        <img src={Teddy} className="teddybear flicker" alt="dark teddy bear"></img>
                         <img src={SpookyNeo} className="spooky-neo flicker2" alt="spooky neo face"></img>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                    <li data-depth="0.3" className="bear-box">
+                        <img src={Teddy} className="teddybear flicker" alt="dark teddy bear"></img>
+                    </li>
+                </ul>
+            </div>
+
         )
     }
 }

@@ -18,17 +18,24 @@
     left: 0;
 }
 
+.bear-box {
+    position: relative;
+    width: 20%;
+    height: 20%;
+    text-align: center;
+    left: 14.5vw !important;
+    top: 22vw !important;
+}
+
 .teddybear {
     position: absolute;
-    width: 15%;
+    width: 100%;
     height: auto;
-    left: 42%;
-    margin-top: 47%;
 }
 
 .spooky-neo {
     position: absolute;
-    width:100%;
+    width: 100%;
 }
 
 .flicker {
@@ -103,8 +110,16 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .spotlight {}
+@media screen and (orientation: portrait) and (max-width:450px) {
 
-    .teddybear {}
+    .spotlight{
+        transform:scale(1.2);
+        margin-top:100px;
+    }
+
+    .teddybear {
+        transform:scale(1.2);
+        margin-top:100px;
+    }
+
 }

@@ -15,12 +15,18 @@
   top: 0;
   left: 0; }
 
+.bear-box {
+  position: relative;
+  width: 20%;
+  height: 20%;
+  text-align: center;
+  left: 14.5vw !important;
+  top: 22vw !important; }
+
 .teddybear {
   position: absolute;
-  width: 15%;
-  height: auto;
-  left: 42%;
-  margin-top: 47%; }
+  width: 100%;
+  height: auto; }
 
 .spooky-neo {
   position: absolute;
@@ -72,5 +78,13 @@
   63%, 63.999%, 69%, 69.999% {
     opacity: .99;
     text-shadow: -1px #000; } }
+@media screen and (orientation: portrait) and (max-width: 450px) {
+  .spotlight {
+    transform: scale(1.2);
+    margin-top: 100px; }
+
+  .teddybear {
+    transform: scale(1.2);
+    margin-top: 100px; } }
 
 /*# sourceMappingURL=ParaBackground.css.map */
