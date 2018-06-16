@@ -66,6 +66,39 @@
     transform: scale(1);
 }
 
+.yes-allow:hover {
+    -webkit-animation: neonText 1.5s ease-in-out infinite alternate;
+    animation: neonText 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonText {
+    0% {
+        text-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF0000, 0 0 70px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000, 0 0 150px #FF0000;
+    }
+
+    50% {
+        text-shadow: 0 0 0px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF0000, 0 0 35px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF0000, 0 0 75px #FF0000;
+    }
+
+    100% {
+        text-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF0000, 0 0 70px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000, 0 0 150px #FF0000;
+    }
+}
+
+@-webkit-keyframes neonText {
+    0% {
+        text-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF0000, 0 0 70px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000, 0 0 150px #FF0000;
+    }
+
+    50% {
+        text-shadow: 0 0 0px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF0000, 0 0 35px #FF0000, 0 0 40px #FF0000, 0 0 50px #FF0000, 0 0 75px #FF0000;
+    }
+
+    100% {
+        text-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF0000, 0 0 70px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000, 0 0 150px #FF0000;
+    }
+}
+
 @-webkit-keyframes glitchLayer {
     0%, 36.5% {
         opacity: 0;
@@ -169,14 +202,14 @@
     }
 }
 
-@media screen and (orientation: portrait) and (max-width:450px) {
+@media screen and (orientation: portrait) and (max-width: 450px) {
     .light-text {
         bottom: 30%;
         left: 39%;
     }
 }
 
-@media screen and (orientation: landscape) and (max-width:700px) {
+@media screen and (orientation: landscape) and (max-width: 700px) {
     .light-text {
         bottom: 3%;
         left: 44%;
