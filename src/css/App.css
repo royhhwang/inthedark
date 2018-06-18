@@ -17,7 +17,6 @@
   font-family: Code;
   src: url("../fonts/CodeBold.otf") format("opentype"); }
 body {
-  font-family: LemonMilk;
-  overflow: hidden; }
+  font-family: LemonMilk; }
 
 /*# sourceMappingURL=App.css.map */
