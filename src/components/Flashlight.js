@@ -23,7 +23,7 @@ class Flashlight extends Component {
             document.documentElement.style.setProperty('--lights', 0);
         }
         else {
-            document.documentElement.style.setProperty('--lights', 'radial-gradient( circle 25vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.99) 100%)');
+            document.documentElement.style.setProperty('--lights', 'radial-gradient( circle 50vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.25) 35%, rgba(0, 0, 0, 0.92) 50%)');
         }
     }
 
@@ -43,7 +43,7 @@ class Flashlight extends Component {
                     <div className="light-text" id="title-glitch3">Hit the lights</div>
                     <div className="light-text" id="title-glitch4">Hit the lights</div>
                 </Col>
-                <Col className={allowAccess + " s12 light-text white-font"}>
+                <Col className={allowAccess + " s12 light-text white-font welcome-text"}>
                     <a className={window.location.pathname === "/aframe" ? "active" : ""}>
                         <Link to="/aframe">Welcome</Link>
                     </a>
