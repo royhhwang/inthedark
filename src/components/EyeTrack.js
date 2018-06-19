@@ -9,8 +9,7 @@ class EyeTrack extends Component {
 
         this.state = {
             x: 0,
-            y: 0,
-            height: 0,
+            y: 0
         };
         this.handleEyeTrack = this.handleEyeTrack.bind(this);
     }

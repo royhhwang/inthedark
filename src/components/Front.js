@@ -11,7 +11,7 @@ class Front extends Component {
 
         this.state = {
             x: 0,
-            y: 0,
+            y: 0
         };
         this.onMouseMove = this.onMouseMove.bind(this);
     }
