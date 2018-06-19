@@ -19,7 +19,7 @@ class Preloader extends Component {
     componentDidMount() {
         setTimeout(() => this.setState({ reveal: false }), 0);
         setTimeout(() => this.setState({ visible: false }), 3000);
-        setTimeout(() => this.setState({ layer: false }), 8000);
+        setTimeout(() => this.setState({ layer: false }), 80);
     }
 
     render() {

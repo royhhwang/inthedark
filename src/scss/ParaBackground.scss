@@ -36,6 +36,7 @@
 .spooky-neo {
     position: absolute;
     width: 100%;
+    max-width: 100%;
 }
 
 .flicker {
@@ -110,8 +111,6 @@
         text-shadow: -1px #000;
     }
 }
-
-
 
 @media screen and (orientation: portrait) and (max-width: 450px) {
     .spotlight {

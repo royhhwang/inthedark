@@ -1,5 +1,6 @@
 :root {
-  --animation-time: 5s; }
+  --animation-time: 5s;
+  --lights: radial-gradient( circle 50vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.25) 35%, rgba(0, 0, 0, 0.92) 50%); }
 
 :root:before {
   content: '';
@@ -22,7 +23,8 @@
   height: 100px;
   width: auto;
   top: 1%;
-  right: 0%; }
+  right: 0%;
+  cursor: pointer; }
 
 .light-text {
   position: absolute;

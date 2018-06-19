@@ -30,7 +30,8 @@
 
 .spooky-neo {
   position: absolute;
-  width: 100%; }
+  width: 100%;
+  max-width: 100%; }
 
 .flicker {
   -webkit-animation: flicker 6s alternate linear infinite;

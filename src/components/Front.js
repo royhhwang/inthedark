@@ -3,6 +3,7 @@ import { Row, Col } from 'react-materialize';
 import EyeTrack from './EyeTrack';
 import Flashlight from './Flashlight';
 import Preloader from './Preloader';
+import Focus from './Focus';
 import '../css/Front.css';
 
 class Front extends Component {
@@ -35,6 +36,7 @@ class Front extends Component {
                         <Col className="s12">
                             <EyeTrack />
                             <Flashlight />
+                            <Focus />
                         </Col>
                     </Row>
                 </div>

@@ -1,8 +1,7 @@
 :root {
   --secondAngle:90deg;
   --cursorX: 50vw;
-  --cursorY: 50vh;
-  --lights: radial-gradient( circle 25vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.99) 100%); }
+  --cursorY: 50vh; }
 
 .track-layer {
   height: 100vh;

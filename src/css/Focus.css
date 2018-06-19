@@ -1,0 +1,22 @@
+.focus-layer {
+  background-color: white;
+  text-align: center;
+  height: auto; }
+
+.focus-fill {
+  position: relative;
+  top: 5%;
+  padding-bottom: 1em; }
+
+.focus-title {
+  padding-top: 1em;
+  margin-bottom: 1em; }
+
+.focus-data {
+  display: inline-block; }
+
+.focus-images {
+  max-height: 50px;
+  max-width: 50px; }
+
+/*# sourceMappingURL=Focus.css.map */
