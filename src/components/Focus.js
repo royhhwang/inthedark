@@ -3,9 +3,10 @@ import axios from 'axios';
 import { Row, Col } from 'react-materialize';
 import '../css/Focus.css';
 
-const API_KEY = process.env.REACT_APP_API_CODE;
-const API_URL = 'https://itch.io/api/1/';
 const IGDB_KEY = process.env.REACT_APP_IGDB_API;
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+const targetUrl = 'https://api-endpoint.igdb.com/games/?search=freddy,popularity&order=popularity:desc&limit=5&fields=*';
+
 
 class Focus extends Component {
   constructor(props) {
@@ -16,16 +17,14 @@ class Focus extends Component {
   }
 
   componentDidMount() {
-    axios.get("https://api-endpoint.igdb.com/games/1942?fields=*", {
-      method: 'GET',
-      mode: 'no-cors',
-      withCredentials: true,
-      credentials: 'same-origin',
+    axios.get(proxyUrl + targetUrl, {
       headers: {
+        'Access-Control-Allow-Headers': 'Content-Type',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
         "user-key": IGDB_KEY,
         'Accept': "application/json",
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': '*'
+        'Content-Type': 'application/json'
       },
     })
       .then(({ data }) => {
@@ -43,18 +42,17 @@ class Focus extends Component {
 
     const picSrc = this.state.results;
     const itchData = picSrc.map((pic) => (
-      <Col className="s4">
-        <div key={pic.id} className="focus-data">
-          <p>{pic.title}</p>
-          <a href={pic.url}><img src={pic.cover_url} alt="game placeholder" className="focus-images" /></a>
+      <Col className="s4" key={pic.id} >
+        <div className="focus-data">
+          <a href={pic.url}><img src={pic.cover.url} alt="game placeholder" className="focus-images" /></a>
+          <p>{pic.name}</p>
         </div>
       </Col>
-    )
-    )
+    ));
     return (
       <Row className="focus-layer">
         <Col className="s12 focus-fill">
-          <h1 className="focus-title">Game Portfolio</h1>
+          <h1 className="focus-title">Game List</h1>
           {itchData}
         </Col>
       </Row>

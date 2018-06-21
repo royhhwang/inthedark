@@ -205,12 +205,20 @@
         bottom: 30%;
         left: 43%;
     }
+
+    .welcome-text {
+        left: 42%;
+    }
 }
 
 @media screen and (orientation: portrait) and (max-width: 450px) {
     .light-text {
         bottom: 30%;
         left: 39%;
+    }
+
+    .welcome-text {
+        left: 32%;
     }
 }
 

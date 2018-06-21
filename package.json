@@ -12,6 +12,7 @@
     "aframe-react-assets": "^2.0.5",
     "axios": "^0.18.0",
     "cors": "^2.8.4",
+    "cors-anywhere": "^0.4.1",
     "gh-pages": "^1.1.0",
     "igdb-api-node": "^3.1.7",
     "obj2gltf": "^2.2.0",

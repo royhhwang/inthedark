@@ -138,11 +138,17 @@
 
   .light-text {
     bottom: 30%;
-    left: 43%; } }
+    left: 43%; }
+
+  .welcome-text {
+    left: 42%; } }
 @media screen and (orientation: portrait) and (max-width: 450px) {
   .light-text {
     bottom: 30%;
-    left: 39%; } }
+    left: 39%; }
+
+  .welcome-text {
+    left: 32%; } }
 @media screen and (orientation: landscape) and (max-width: 700px) {
   .light-text {
     bottom: 3%;
