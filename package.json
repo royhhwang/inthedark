@@ -13,6 +13,7 @@
     "axios": "^0.18.0",
     "cors": "^2.8.4",
     "gh-pages": "^1.1.0",
+    "igdb-api-node": "^3.1.7",
     "obj2gltf": "^2.2.0",
     "parallax-js": "^3.1.0",
     "react": "^16.3.2",
