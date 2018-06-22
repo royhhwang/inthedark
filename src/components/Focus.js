@@ -5,7 +5,7 @@ import '../css/Focus.css';
 
 const IGDB_KEY = process.env.REACT_APP_IGDB_API;
 const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-const targetUrl = 'https://api-endpoint.igdb.com/games/?search=freddy,popularity&order=popularity:desc&limit=5&fields=*';
+const targetUrl = 'https://api-endpoint.igdb.com/games/?search=freddy,popularity&order=popularity:desc&limit=6&fields=*';
 
 
 class Focus extends Component {
@@ -42,8 +42,8 @@ class Focus extends Component {
 
     const picSrc = this.state.results;
     const itchData = picSrc.map((pic) => (
-      <Col className="s4" key={pic.id} >
-        <div className="focus-data">
+      <Col className="s2 focus-data" key={pic.id} >
+        <div>
           <a href={pic.url}><img src={pic.cover.url} alt="game placeholder" className="focus-images" /></a>
           <p>{pic.name}</p>
         </div>
@@ -52,8 +52,10 @@ class Focus extends Component {
     return (
       <Row className="focus-layer">
         <Col className="s12 focus-fill">
-          <h1 className="focus-title">Game List</h1>
-          {itchData}
+          <h1 className="focus-title">Five Nights</h1>
+          <Row>
+            {itchData}
+          </Row>
         </Col>
       </Row>
     )

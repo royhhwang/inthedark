@@ -4,6 +4,7 @@ import 'aframe-particle-system-component';
 import { Entity, Scene } from 'aframe-react';
 import 'aframe-animation-component';
 import Sky from '../img/sky.jpg';
+import Teddy from '../models/Teddy.obj';
 import '../css/AFrame.css';
 
 class AFrame extends Component {
@@ -25,6 +26,7 @@ class AFrame extends Component {
             <Scene>
                 <a-assets>
                     <img id="sky-texture" src={Sky} alt="dark sky" />
+                    <a-asset-item id="teddy-bear" src={Teddy} />
                 </a-assets>
 
                 <Entity primitive="a-plane" color="#833535" rotation="-90 0 0" height="100" width="100" repeat="100 10" />
@@ -51,11 +53,9 @@ class AFrame extends Component {
                     position={{ x: 0, y: 2.5, z: -10 }}
                     scale={{ x: 5, y: 5, z: 1 }}
                 />
-                <Entity id="sphere" class="collidable"
-                    geometry={{ primitive: 'sphere' }}
-                    material={{ color: this.state.color }}
-                    position={{ x: 0, y: 1, z: -8 }}
-                    scale={{ x: 1, y: 1, z: 1 }}
+                <a-entity obj-model="obj: #teddy-bear"
+                    position="0 0 -8"
+                    scale="2 2 2"
                 />
             </Scene>
         );
