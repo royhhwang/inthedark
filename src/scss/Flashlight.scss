@@ -1,6 +1,6 @@
 :root {
     --animation-time: 5s;
-    --lights: radial-gradient( circle 500vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.25) 35%, rgba(0, 0, 0, 0.92) 50%);
+    --lights: radial-gradient( circle 50vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.25) 35%, rgba(0, 0, 0, 0.92) 50%);
 }
 
 :root:before {
@@ -214,7 +214,7 @@
 @media screen and (orientation: portrait) and (max-width: 450px) {
     .light-text {
         bottom: 30%;
-        left: 38%;
+        left: 37%;
     }
 
     .welcome-text {

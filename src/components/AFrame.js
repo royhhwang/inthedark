@@ -61,13 +61,13 @@ class AFrame extends Component {
                     position="0 0 -18"
                     scale="2 2 2"
                 />
-                {/* <a-camera>
+                <a-camera>
                     <a-cursor
                         color={this.state.colors}
                         onClick={this.generateColor}
                     />
-                </a-camera> */}
-                <a-entity id="rig"
+                </a-camera>
+                {/* <a-entity id="rig"
                     movement-controls
                     position="0 1 0">
                     <a-entity camera
@@ -76,7 +76,7 @@ class AFrame extends Component {
                         color={this.state.colors}
                         onClick={this.generateColor}
                     />
-                </a-entity>
+                </a-entity> */}
             </Scene>
         );
     }
