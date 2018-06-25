@@ -1,6 +1,6 @@
 :root {
   --animation-time: 5s;
-  --lights: radial-gradient( circle 50vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.25) 35%, rgba(0, 0, 0, 0.92) 50%); }
+  --lights: radial-gradient( circle 500vmax at var(--cursorX) var(--cursorY), rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.25) 35%, rgba(0, 0, 0, 0.92) 50%); }
 
 :root:before {
   content: '';
@@ -145,13 +145,17 @@
 @media screen and (orientation: portrait) and (max-width: 450px) {
   .light-text {
     bottom: 30%;
-    left: 39%; }
+    left: 38%; }
 
   .welcome-text {
     left: 32%; } }
-@media screen and (orientation: landscape) and (max-width: 700px) {
+@media screen and (orientation: landscape) and (max-width: 750px) {
   .light-text {
-    bottom: 3%;
-    left: 44%; } }
+    bottom: 2%;
+    left: 42%; }
+
+  .welcome-text {
+    left: 43%;
+    font-size: 20px; } }
 
 /*# sourceMappingURL=Flashlight.css.map */

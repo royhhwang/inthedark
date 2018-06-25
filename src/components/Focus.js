@@ -31,7 +31,6 @@ class Focus extends Component {
         this.setState({
           results: data
         })
-        console.log(this.state.results);
       })
       .catch((e) => {
         console.log("Error: ", e);
@@ -44,7 +43,7 @@ class Focus extends Component {
     const itchData = picSrc.map((pic) => (
       <Col className="s2 focus-data" key={pic.id} >
         <div>
-          <a href={pic.url}><img src={pic.cover.url} alt="game placeholder" className="focus-images" /></a>
+          <a href={pic.url}><img src={pic.cover.url} alt={pic.name + " game"} className="focus-images" /></a>
           <p>{pic.name}</p>
         </div>
       </Col>
