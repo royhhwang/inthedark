@@ -63,7 +63,7 @@ class AFrame extends Component {
                     position="0 0 -18"
                     scale="2 2 2"
                 >
-                    <a-link href="/"
+                    <a-link href="/inthedark/"
                         title=" "
                         image="#home-link"
                         position="0 0.12 0.03"
