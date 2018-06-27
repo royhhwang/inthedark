@@ -4,6 +4,7 @@ import 'aframe-particle-system-component';
 import { Entity, Scene } from 'aframe-react';
 import 'aframe-animation-component';
 import Sky from '../img/sky.jpg';
+import Ring from '../img/ring.png';
 import Teddy from '../models/Teddy.obj';
 import '../css/AFrame.css';
 
@@ -29,6 +30,7 @@ class AFrame extends Component {
                 <a-assets>
                     <img id="sky-texture" src={Sky} alt="dark sky" />
                     <img id="ground-texture" crossOrigin="anonymous" src="https://cdn.aframe.io/a-painter/images/floor.jpg" alt="dark grid flooring" />
+                    <img id="home-link" src={Ring} alt="link back to home screen" />
                     <a-asset-item id="teddy-bear" src={Teddy} />
                 </a-assets>
 
@@ -57,26 +59,23 @@ class AFrame extends Component {
                     position={{ x: 0, y: 2.5, z: -20 }}
                     scale={{ x: 5, y: 5, z: 1 }}
                 />
-                <a-entity obj-model="obj: #teddy-bear"
+                <Entity obj-model="obj: #teddy-bear"
                     position="0 0 -18"
                     scale="2 2 2"
-                />
+                >
+                    <a-link href="/"
+                        title=" "
+                        image="#home-link"
+                        position="0 0.12 0.03"
+                        scale="0.08 0.08 0.08"
+                    />
+                </Entity>
                 <a-camera>
                     <a-cursor
                         color={this.state.colors}
                         onClick={this.generateColor}
                     />
                 </a-camera>
-                {/* <a-entity id="rig"
-                    movement-controls
-                    position="0 1 0">
-                    <a-entity camera
-                        position="0 1 0"
-                        look-controls="pointerLockEnabled: true"
-                        color={this.state.colors}
-                        onClick={this.generateColor}
-                    />
-                </a-entity> */}
             </Scene>
         );
     }
