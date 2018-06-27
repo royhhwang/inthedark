@@ -1,6 +1,6 @@
 <h1>In the Dark</h1>
 
-Project for twitter live feed concerning keywords -- horror games, scary games -- .
+Tribute page for a personal favorite game franchise, creating a horror-like game atmosphere.
 
-Features Parallax.js, React.js with CSS variable components, and Twitter API.
-Planned: A-Framework.
+React app featuring Parallax.js with CSS variable components, VR world building, and IGDB API.
+Vr Experience through AFrame.js using simple models and images.
