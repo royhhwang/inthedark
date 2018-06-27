@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.e7a6173c.css",
   "main.css.map": "static/css/main.e7a6173c.css.map",
-  "main.js": "static/js/main.abc87a89.js",
-  "main.js.map": "static/js/main.abc87a89.js.map",
+  "main.js": "static/js/main.d7f5ca80.js",
+  "main.js.map": "static/js/main.d7f5ca80.js.map",
   "static\\media\\Bebas.ttf": "static/media/Bebas.7d3d597a.ttf",
   "static\\media\\BebasNeue Light.otf": "static/media/BebasNeue Light.4c8d42e6.otf",
   "static\\media\\BebasNeueBold.otf": "static/media/BebasNeueBold.524d720f.otf",
@@ -14,6 +14,7 @@
   "static\\media\\cellphone.png": "static/media/cellphone.86cffb1e.png",
   "static\\media\\doodle.png": "static/media/doodle.4b639765.png",
   "static\\media\\eye.png": "static/media/eye.59513ad4.png",
+  "static\\media\\ring.png": "static/media/ring.57d480f9.png",
   "static\\media\\scaryface.png": "static/media/scaryface.28ba79a7.png",
   "static\\media\\sky.jpg": "static/media/sky.7244a4c6.jpg",
   "static\\media\\spotlight.png": "static/media/spotlight.b6032611.png",
