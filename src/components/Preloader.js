@@ -22,6 +22,10 @@ class Preloader extends Component {
         setTimeout(() => this.setState({ layer: false }), 8000);
     }
 
+    componentWillUnmount() {
+        clearInterval(this.state);
+    }
+
     render() {
 
         const cellReveal = this.state.reveal ? 'cell-invisible' : 'cell-visible'
