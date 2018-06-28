@@ -41,7 +41,6 @@ class Focus extends Component {
         this.setState({
           results: data
         })
-        console.log(this.state.results);
       })
       .catch((e) => {
         console.log("Error: ", e);
@@ -52,11 +51,11 @@ class Focus extends Component {
     this.setState({
       query: this.search.value
     }, () => {
-      if (this.state.query && this.state.query.length > 3) {
+      if (this.state.query && this.state.query.length > 2) {
         this.handleApiSearch();
       }
       else {
-        document.getElementById('empty-text').innerHTML = "Please enter more than 3 letters!";
+        document.getElementById('empty-text').innerHTML = "Please enter at least 3 letters!";
       }
     }
     )

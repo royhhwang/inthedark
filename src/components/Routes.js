@@ -9,11 +9,13 @@ const Routes = () => (
     <HashRouter>
         <div>
             <AnimatedSwitch
-            atEnter={{ opacity: 0 }}
-            atLeave={{ opacity: 0 }}
-            atActive={{ opacity: 1 }}
-            className="switch-wrapper">
-                <Route exact path="/" component={Front} />
+                atEnter={{ opacity: 0 }}
+                atLeave={{ opacity: 0 }}
+                atActive={{ opacity: 1 }}
+                className="switch-wrapper">
+                {["/", "/?"].map((path, index) =>
+                    <Route exact path={path} component={Front} key={index} />
+                )}
                 <Route exact path="/aframe" component={AFrame} />
                 <Route component={Error} />
             </AnimatedSwitch>
