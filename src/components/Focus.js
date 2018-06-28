@@ -7,13 +7,13 @@ import '../css/Focus.css';
 const IGDB_KEY = process.env.REACT_APP_IGDB_API;
 const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 const targetUrl = 'https://api-endpoint.igdb.com/games/?search=';
-const searchParams =',popularity&order=popularity:desc&limit=14&fields=*';
+const searchParams = ',popularity&order=popularity:desc&limit=14&fields=*';
 
 class Focus extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      query:'freddy',
+      query: 'freddy',
       results: []
     }
   }
@@ -52,44 +52,47 @@ class Focus extends Component {
     this.setState({
       query: this.search.value
     }, () => {
-      if (this.state.query && this.state.query.length >3) {
+      if (this.state.query && this.state.query.length > 3) {
         this.handleApiSearch();
       }
       else {
-        document.getElementById('form-layer').innerHTML = "Please enter more than 3 letters!";
+        document.getElementById('empty-text').innerHTML = "Please enter more than 3 letters!";
       }
     }
-  )}
+    )
+  }
 
   render() {
 
     const picSrc = this.state.results;
     const itchData = picSrc.map((pic) => {
       if (pic.cover !== undefined) {
-        return(
-        <Col className="s3 focus-data" key={pic.id} >
-          <div>
-            <a href={pic.url} target="_blank"><img src={pic.cover.url} alt={pic.name + " game"} className="focus-images" /></a>
-            <p>{pic.name}</p>
-          </div>
-        </Col>
-      )}
+        return (
+          <Col className="s3 focus-data" key={pic.id} >
+            <div>
+              <a href={pic.url} target="_blank"><img src={pic.cover.url} alt={pic.name + " game"} className="focus-images" /></a>
+              <p>{pic.name}</p>
+            </div>
+          </Col>
+        )
+      }
       else {
-        return(
-        <Col className="s3 focus-data" key={pic.id} >
-          <div>
-            <a href={pic.url} target="_blank"><img src={Default} alt={pic.name + " game"} className="focus-images" /></a>
-            <p>{pic.name}</p>
-          </div>
-        </Col>
-        )}
+        return (
+          <Col className="s3 focus-data" key={pic.id} >
+            <div>
+              <a href={pic.url} target="_blank"><img src={Default} alt={pic.name + " game"} className="focus-images" /></a>
+              <p>{pic.name}</p>
+            </div>
+          </Col>
+        )
+      }
     });
 
     return (
       <Row className="focus-layer">
         <Col className="s12 focus-fill">
           <h1 className="focus-title">Games</h1>
-          <form id="form-layer" 
+          <form id="form-layer"
             onSubmit={this.handleSearchValue}
           >
             <input
@@ -97,6 +100,7 @@ class Focus extends Component {
               ref={input => this.search = input}
             />
           </form>
+          <div id="empty-text" />
           <Row>
             {itchData}
           </Row>
