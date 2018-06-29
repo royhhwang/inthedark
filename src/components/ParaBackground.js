@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Parallax from 'parallax-js';
 import Spotlight from '../img/spotlight.png';
 import Teddy from '../img/teddybear.png';
-import SpookyNeo from '../img/bear.png';
+import SpookyNeo from '../img/face.png';
 import '../css/ParaBackground.css';
 
 class ParaBackground extends Component {

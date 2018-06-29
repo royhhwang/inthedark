@@ -77,13 +77,13 @@
     0%, 19.999%, 22%, 62.999%, 64%, 68.999%, 70%, 100% {
         opacity: 0;
         text-shadow: none;
-        transform: scale(1);
+        transform: scale(0.7);
     }
 
     20%, 21.999% {
         opacity: .99;
         text-shadow: -1px #000;
-        transform: scale(1);
+        transform: scale(0.7);
     }
 
     63%, 63.999%, 69%, 69.999% {
