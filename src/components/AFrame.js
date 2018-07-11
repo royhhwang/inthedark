@@ -4,7 +4,7 @@ import 'aframe-particle-system-component';
 import { Entity, Scene } from 'aframe-react';
 import 'aframe-animation-component';
 import Sky from '../img/sky.jpg';
-import Ring from '../img/ring.png';
+import Ring from '../img/ring2.png';
 import Teddy from '../models/Teddy.obj';
 
 class AFrame extends Component {
