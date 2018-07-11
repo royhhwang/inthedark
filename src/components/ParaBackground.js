@@ -19,11 +19,11 @@ class ParaBackground extends Component {
         return (
             <div className="para-absolute">
                 <ul ref={el => this.scene = el} className="para-layer">
-                    <li data-depth="0.2">
+                    <li data-depth="0.3">
                         <img src={Spotlight} className="spotlight flicker" alt="hallway spotlight"></img>
                         <img src={SpookyNeo} className="spooky-neo flicker2" alt="spooky neo face"></img>
                     </li>
-                    <li data-depth="0.5" className="bear-box">
+                    <li data-depth="0.7" className="bear-box">
                         <img src={Teddy} className="teddybear flicker" alt="dark teddy bear"></img>
                     </li>
                 </ul>

@@ -1,19 +1,21 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import Fade from 'react-reveal/Fade';
 import { Row, Col } from 'react-materialize';
-import Default from '../img/error.png';
+import IdleSpinner from "./IdleSpinner";
 import '../css/Focus.css';
 
 const IGDB_KEY = process.env.REACT_APP_IGDB_API;
 const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 const targetUrl = 'https://api-endpoint.igdb.com/games/?search=';
-const searchParams = ',popularity&order=popularity:desc&limit=14&fields=*';
+const searchParams = ',popularity&order=popularity:desc&limit=19&fields=*';
 
 class Focus extends Component {
   constructor(props) {
     super(props);
     this.state = {
       query: 'freddy',
+      isLoading: true,
       results: []
     }
   }
@@ -39,7 +41,8 @@ class Focus extends Component {
     })
       .then(({ data }) => {
         this.setState({
-          results: data
+          results: data,
+          isLoading: false,
         })
       })
       .catch((e) => {
@@ -52,6 +55,7 @@ class Focus extends Component {
       query: this.search.value
     }, () => {
       if (this.state.query && this.state.query.length > 2) {
+        this.setState({ isLoading:true });
         this.handleApiSearch();
       }
       else {
@@ -61,36 +65,46 @@ class Focus extends Component {
     )
   }
 
+  idleSpinner = (loading) => {
+    if (this.state.isLoading === true) {
+      return (
+        <IdleSpinner />
+      )
+    }
+    else {
+      return (null);
+    }
+  }
+
   render() {
 
     const picSrc = this.state.results;
     const itchData = picSrc.map((pic) => {
-      if (pic.cover !== undefined) {
-        return (
-          <Col className="s3 focus-data" key={pic.id} >
-            <div>
-              <a href={pic.url} target="_blank"><img src={pic.cover.url} alt={pic.name + " game"} className="focus-images" /></a>
-              <p>{pic.name}</p>
-            </div>
-          </Col>
-        )
+      if (pic.themes !== undefined) {
+        if (pic.themes.find((theme) => { return theme === 19; }))
+          return (
+            <Col className="s3 focus-data" key={pic.id} >
+              <Fade bottom>
+                <div className="focus-content">
+                  <a href={pic.url} target="_blank"><img src={pic.cover.url} alt={pic.name + " game"} className="focus-images" /></a>
+                  <p className="focus-font">{pic.name}</p>
+                </div>
+              </Fade>
+            </Col>
+          )
+        else {
+          return false;
+        }
       }
       else {
-        return (
-          <Col className="s3 focus-data" key={pic.id} >
-            <div>
-              <a href={pic.url} target="_blank"><img src={Default} alt={pic.name + " game"} className="focus-images" /></a>
-              <p>{pic.name}</p>
-            </div>
-          </Col>
-        )
+        return false;
       }
     });
 
     return (
       <Row className="focus-layer">
         <Col className="s12 focus-fill">
-          <h1 className="focus-title">Games</h1>
+          <h1 className="focus-title">Horror Games</h1>
           <form id="form-layer"
             onSubmit={this.handleSearchValue}
           >
@@ -98,6 +112,7 @@ class Focus extends Component {
               placeholder="Search for..."
               ref={input => this.search = input}
             />
+            {this.idleSpinner()}
           </form>
           <div id="empty-text" />
           <Row>

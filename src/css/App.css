@@ -16,7 +16,16 @@
 @font-face {
   font-family: Code;
   src: url("../fonts/CodeBold.otf") format("opentype"); }
+@font-face {
+  font-family: Imaginary;
+  src: url("../fonts/MyImaginaryFriend.ttf") format("truetype"); }
+@font-face {
+  font-family: Spooky;
+  src: url("../fonts/SpookyLight.ttf") format("truetype"); }
+@font-face {
+  font-family: Toxia;
+  src: url("../fonts/Toxia.ttf") format("truetype"); }
 body {
-  font-family: LemonMilk; }
+  font-family: Imaginary; }
 
 /*# sourceMappingURL=App.css.map */

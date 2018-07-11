@@ -24,7 +24,7 @@
 
 .light-switch {
     position: fixed;
-    height: 100px;
+    height: 90px;
     width: auto;
     top: 1%;
     right: 0%;
@@ -38,7 +38,7 @@
 }
 
 .welcome-text {
-    font-size: 30px;
+    font-size: 40px;
     left: 46.5%;
     bottom: 5%;
 }
@@ -203,22 +203,23 @@
 
     .light-text {
         bottom: 30%;
-        left: 44%;
+        left: 45.5%;
     }
 
     .welcome-text {
-        left: 42%;
+        left: 45%;
+        font-size: 30px;
     }
 }
 
 @media screen and (orientation: portrait) and (max-width: 450px) {
     .light-text {
         bottom: 30%;
-        left: 37%;
+        left: 40%;
     }
 
     .welcome-text {
-        left: 32%;
+        left: 39%;
     }
 }
 

@@ -1,7 +1,13 @@
+input {
+    font-family: Spooky;
+}
+
 .focus-layer {
-    background-color: white;
     text-align: center;
     height: auto;
+    background-image: url("../img/snow.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .focus-fill {
@@ -12,11 +18,13 @@
 
 .focus-title {
     padding-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    font-size: 45px;
 }
 
 .focus-data {
     display: inline-block;
+    vertical-align: top;
     padding: 2em;
     width: 200px;
 }
@@ -27,5 +35,10 @@
 }
 
 #form-layer {
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
+}
+
+.focus-font {
+    font-weight: bolder;
+    font-size: 20px;
 }
