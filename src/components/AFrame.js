@@ -6,7 +6,6 @@ import 'aframe-animation-component';
 import Sky from '../img/sky.jpg';
 import Ring from '../img/ring.png';
 import Teddy from '../models/Teddy.obj';
-import '../css/AFrame.css';
 
 class AFrame extends Component {
     constructor(props) {
