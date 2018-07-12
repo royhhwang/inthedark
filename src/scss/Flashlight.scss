@@ -28,13 +28,18 @@
     width: auto;
     top: 1%;
     right: 0%;
+    z-index: 3;
+    opacity: 0.5;
     cursor: pointer;
+    -webkit-animation: neonImage 5s ease-in-out infinite alternate;
+    animation: neonImage 5s ease-in-out infinite alternate;
 }
 
 .light-text {
     position: absolute;
-    left: 47%;
+    left: 46.5%;
     bottom: 7%;
+    font-size: 25px;
 }
 
 .welcome-text {
@@ -101,6 +106,34 @@
 
     100% {
         text-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF0000, 0 0 70px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000, 0 0 150px #FF0000;
+    }
+}
+
+@keyframes neonImage {
+    0% {
+        box-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF0000, 0 0 70px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000, 0 0 150px #FF0000;
+    }
+
+    10%, 90% {
+        box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #FF0000, 0 0 0px #FF0000, 0 0 0px #FF0000, 0 0 0px #FF0000, 0 0 0px #FF0000;
+    }
+
+    100% {
+        box-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF0000, 0 0 70px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000, 0 0 150px #FF0000;
+    }
+}
+
+@-webkit-keyframes neonImage {
+    0% {
+        box-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF0000, 0 0 70px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000, 0 0 150px #FF0000;
+    }
+
+    10%, 90% {
+        box-shadow: 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #fff, 0 0 0px #FF0000, 0 0 0px #FF0000, 0 0 0px #FF0000, 0 0 0px #FF0000, 0 0 0px #FF0000;
+    }
+
+    100% {
+        box-shadow: 0 0 15px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF0000, 0 0 70px #FF0000, 0 0 80px #FF0000, 0 0 100px #FF0000, 0 0 150px #FF0000;
     }
 }
 

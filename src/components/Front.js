@@ -11,14 +11,12 @@ class Front extends Component {
         super(props);
 
         this.state = {
-            x: 0,
-            y: 0
+            window: false
         };
         this.onMouseMove = this.onMouseMove.bind(this);
     }
 
     onMouseMove = (e) => {
-        this.setState({ x: e.screenX, y: e.screenY });
 
         const x = e.screenX;
         const y = e.screenY;

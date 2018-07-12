@@ -22,7 +22,8 @@ input {
   display: inline-block;
   vertical-align: top;
   padding: 2em;
-  width: 200px; }
+  width: 200px;
+  z-index: 2; }
 
 .focus-images {
   max-height: 50px;
@@ -34,5 +35,9 @@ input {
 .focus-font {
   font-weight: bolder;
   font-size: 20px; }
+
+.fail-layer {
+  position: relative;
+  z-index: 1; }
 
 /*# sourceMappingURL=Focus.css.map */

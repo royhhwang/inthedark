@@ -8,7 +8,7 @@ import '../css/Focus.css';
 const IGDB_KEY = process.env.REACT_APP_IGDB_API;
 const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 const targetUrl = 'https://api-endpoint.igdb.com/games/?search=';
-const searchParams = ',popularity&order=popularity:desc&limit=19&fields=*';
+const searchParams = ',popularity&order=popularity:desc&limit=20&fields=*';
 
 class Focus extends Component {
   constructor(props) {
@@ -55,7 +55,7 @@ class Focus extends Component {
       query: this.search.value
     }, () => {
       if (this.state.query && this.state.query.length > 2) {
-        this.setState({ isLoading:true });
+        this.setState({ isLoading: true });
         this.handleApiSearch();
       }
       else {
@@ -80,8 +80,8 @@ class Focus extends Component {
 
     const picSrc = this.state.results;
     const itchData = picSrc.map((pic) => {
-      if (pic.themes !== undefined) {
-        if (pic.themes.find((theme) => { return theme === 19; }))
+      if (pic.themes !== undefined && pic.cover !== undefined) {
+        if (pic.themes.find((theme) => { return theme === 19; })) {
           return (
             <Col className="s3 focus-data" key={pic.id} >
               <Fade bottom>
@@ -92,6 +92,7 @@ class Focus extends Component {
               </Fade>
             </Col>
           )
+        }
         else {
           return false;
         }
@@ -102,7 +103,7 @@ class Focus extends Component {
     });
 
     return (
-      <Row className="focus-layer">
+      <Row className="focus-layer" >
         <Col className="s12 focus-fill">
           <h1 className="focus-title">Horror Games</h1>
           <form id="form-layer"
@@ -117,6 +118,7 @@ class Focus extends Component {
           <div id="empty-text" />
           <Row>
             {itchData}
+            <div className="fail-layer">Go ahead... Try again...</div>
           </Row>
         </Col>
       </Row>

@@ -4,7 +4,7 @@
   height: 100%;
   width: 100%;
   position: fixed;
-  z-index: 3;
+  z-index: 5;
   pointer-events: none;
   --gap-horizontal:20px;
   --gap-vertical:20px;
@@ -31,7 +31,8 @@
   position: absolute;
   width: 50%;
   left: 25%;
-  top: 50%; }
+  top: 50%;
+  opacity: 0.8; }
 
 #cell-image2 {
   position: absolute;

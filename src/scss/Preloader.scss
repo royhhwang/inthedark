@@ -6,7 +6,7 @@
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 3;
+    z-index: 5;
     pointer-events: none;
     --gap-horizontal:20px;
     --gap-vertical:20px;
@@ -37,6 +37,7 @@
     width: 50%;
     left: 25%;
     top: 50%;
+    opacity: 0.8;
 }
 
 #cell-image2 {
@@ -325,16 +326,17 @@
     30%, 40% {
         opacity: 0;
     }
-    
+
     50% {
-        opacity:0.7;
+        opacity: 0.7;
     }
 
     90% {
         opacity: 0.7;
     }
+
     100% {
-        opacity:0;
+        opacity: 0;
         transform: rotate(360deg);
     }
 }
@@ -348,16 +350,17 @@
     30%, 40% {
         opacity: 0;
     }
-    
+
     50% {
-        opacity:0.7;
+        opacity: 0.7;
     }
 
     90% {
         opacity: 0.7;
     }
+
     100% {
-        opacity:0;
+        opacity: 0;
         transform: rotate(360deg);
     }
 }
@@ -371,16 +374,17 @@
     30%, 40% {
         opacity: 0;
     }
-    
+
     50% {
-        opacity:0.7;
+        opacity: 0.7;
     }
 
     90% {
         opacity: 0.7;
     }
+
     100% {
-        opacity:0;
+        opacity: 0;
         transform: rotate(0deg);
     }
 }
@@ -394,16 +398,17 @@
     30%, 40% {
         opacity: 0;
     }
-    
+
     50% {
-        opacity:0.7;
+        opacity: 0.7;
     }
 
     90% {
         opacity: 0.7;
     }
+
     100% {
-        opacity:0;
+        opacity: 0;
         transform: rotate(0deg);
     }
 }
