@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Feed from './Feed';
+import Footer from './Footer';
 import InvisEye from "../img/eye.png";
 import '../css/EyeTrack.css';
 
@@ -32,6 +33,7 @@ class EyeTrack extends Component {
                 <div className="blink-layer bottom-eyelid"><p>&nbsp;</p></div>
                 
                 <Feed />
+                <Footer />
             </div>
         );
     }

@@ -38,7 +38,7 @@
 
 .welcome-text {
   font-size: 40px;
-  left: 46.5%;
+  left: 44.5%;
   bottom: 5%; }
 
 #title-glitch3 {
@@ -157,25 +157,25 @@
 
   .light-text {
     bottom: 30%;
-    left: 45.5%; }
+    left: 44%; }
 
   .welcome-text {
-    left: 45%;
+    left: 42%;
     font-size: 30px; } }
 @media screen and (orientation: portrait) and (max-width: 450px) {
   .light-text {
     bottom: 30%;
-    left: 40%; }
+    left: 35%; }
 
   .welcome-text {
-    left: 39%; } }
+    left: 29%; } }
 @media screen and (orientation: landscape) and (max-width: 750px) {
   .light-text {
     bottom: 2%;
     left: 42%; }
 
   .welcome-text {
-    left: 43%;
+    left: 42%;
     font-size: 20px; } }
 
 /*# sourceMappingURL=Flashlight.css.map */

@@ -45,7 +45,7 @@ class Flashlight extends Component {
                 </Col>
                 <Col className={allowAccess + " s12 light-text white-font welcome-text"}>
                     <div className={window.location.pathname === "/aframe" ? "active" : ""}>
-                        <Link to="/aframe">Welcome</Link>
+                        <Link to="/aframe">Click to enter</Link>
                     </div>
                 </Col>
             </Row>

@@ -110,7 +110,7 @@ class Focus extends Component {
             onSubmit={this.handleSearchValue}
           >
             <input
-              placeholder="Search for..."
+              placeholder="Type in a scary word..."
               ref={input => this.search = input}
             />
             {this.idleSpinner()}
