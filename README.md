@@ -1,6 +1,13 @@
-<h1>In the Dark</h1>
+# In the Dark
+[Begin here...](https://royhhwang.github.io/inthedark/#/?)
 
-Tribute page for a personal favorite game franchise, creating a horror-like game atmosphere.
+## Features
+- React JS
+- Parallax JS
+- AFrame VR Scene building
+- IGDB Game Database API
 
-React app featuring Parallax.js with CSS variable components, VR world building, and IGDB API.
-Vr Experience through AFrame.js using simple models and images.
+## Overview
+    In the Dark seeks to enhance landing pages with creative usage of web tools to build a unique viewing experience.
+
+    It makes use of CSS animations, Parallax JS, and AFrame's VR scene builder to enhance atmosphere and deliver on its tone.
